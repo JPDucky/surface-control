@@ -20,14 +20,15 @@ SUBCOMMANDS:
     dgpu           Control the discrete GPU
     dtx            Control the latch/dtx-system on the Surface Book 2
     help           Prints this message or the help of the given subcommand(s)
-    performance    Control or query the current performance-mode
     profile        Control or query the current platform profile
     status         Show an overview of the current system status
 ```
 
 See `surface <subcommand> help` for more details.
 
-_Hint:_ You can specify the subcommand by any unabiguous prefix of it, i.e. `surface perf` and `surface p` will both evaluate to `surface performance`.
+_Hint:_ You can specify the subcommand by any unabiguous prefix of it, i.e. `surface prof` and `surface pr` will both evaluate to `surface profile`.
+
+_Note:_ The `surface performance` subcommand is no longer usable as of kernel 5.12 moving forward, and thus has been replaced with the `surface profile` subcommand.
 
 ## Prequisites
 
